@@ -14,11 +14,10 @@ export const Page = () => {
       {!start && (
         <>
           <Picture />
+          <Start buttonName="start Game" onClick={setStart} />
         </>
       )}
-
       {start && <GameBoard />}
-      <Start buttonName="Reset Game" onClick={setStart} />
     </div>
   );
 };
